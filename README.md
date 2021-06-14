@@ -1,7 +1,7 @@
 # JSON Style Guide
 
 ## Introduction
-This style guide documents guidelines and recommendations for building JSON APIs at Erajaya. In general, JSON APIs should follow the spec found at JSON.org. This style guide clarifies and standardizes specific cases so that JSON APIs from Erajaya have a standard look and feel. These guidelines are applicable to JSON requests and responses in both RPC-based and REST-based APIs.
+This style guide documents guidelines and recommendations for building JSON APIs at Company / Organization. In general, JSON APIs should follow the spec found at JSON.org. This style guide clarifies and standardizes specific cases so that JSON APIs from Company / Organization have a standard look and feel. These guidelines are applicable to JSON requests and responses in both RPC-based and REST-based APIs.
 
 ## Definitions
 For the purposes of this style guide, we define the following terms:
