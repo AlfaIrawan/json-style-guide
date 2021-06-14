@@ -36,10 +36,10 @@ Data should not be arbitrarily grouped for convenience. Data elements should be 
 - Flattened Address:
 ```
 {
-    "company": "Erajaya",
-    "website": "https://www.erajaya.com/",
-    "addressLine1": "Bandengan",
-    "addressLine2": "Erajaya Plaza",
+    "company": "Alfa Irawan, PT",
+    "website": "https://www.alfairawan.com/",
+    "addressLine1": "Mars",
+    "addressLine2": "Pluto",
     "state": "DKI Jakarta",
     "city": "Jakarta"
 }
@@ -48,11 +48,11 @@ Data should not be arbitrarily grouped for convenience. Data elements should be 
 - Structured Address:
 ```
 {
-    "company": "Erajaya",
-    "website": "https://www.erajaya.com/",
+    "company": "Alfa Irawan, PT",
+    "website": "https://www.alfairawan.com/",
     "address": {
-        "line1": "Bandengan",
-        "line2": "Erajaya Plaza",
+        "line1": "Mars",
+        "line2": "Pluto",
         "state": "DKI Jakarta",
         "city": "Jakarta"
     }
@@ -87,7 +87,7 @@ The keys of a map do not have to obey the naming guidelines for property names. 
     // The "address" property is a sub-object
     // holding the parts of an address.
     "address": {
-        "addressLine1": "Bandengan",
+        "addressLine1": "Mars",
         "city": "Jakarta",
         "state": "DKI Jakarta"
     },
@@ -111,9 +111,9 @@ There may be exceptions to this, especially when referring to numeric property v
 ```
 {
     // Singular
-    "handphone": "samsung",
+    "animal": "dogs",
     // An array of series, plural
-    "series": [ "s8", "s9"],
+    "type": [ "beagle", "corgi"],
     // "totalItem" doesn't sound right
     "totalItems": 10,
     // But maybe "itemCount" is better
@@ -127,12 +127,12 @@ Avoid naming conflicts by choosing a new property name or versioning the API. Ne
 ```
 {
     "apiVersion": "1.0",
-    "organization": "erajaya"
+    "organization": "alfa irawan, tbk"
     "code": 200
     "message": "success"
     "data": {
-        "businessUnit": "erafone",
-        "product": ["samsung", "apple", "xiaomi"]
+        "businessUnit": "petsshop",
+        "product": ["dogs", "cats", "reptiles"]
     }
     "itemsPerPage": 10
     "currentItemCount": 4
@@ -150,12 +150,12 @@ If in the future we wish to make totalPages a reserved word, we can do one of tw
 ```
 {
     "apiVersion": "1.0",
-    "organization": "erajaya"
+    "organization": "alfa irawan, tbk"
     "code": 200
     "message": "success"
     "data": {
-        "businessUnit": "erafone",
-        "product": ["samsung", "apple", "xiaomi"]
+        "businessUnit": "petsshop",
+        "product": ["dogs", "cats", "reptiles"]
     }
     "itemsPerPage": 10
     "currentItemCount": 4
@@ -171,12 +171,12 @@ If in the future we wish to make totalPages a reserved word, we can do one of tw
 ```
 {
     "apiVersion": "1.0",
-    "organization": "erajaya"
+    "organization": "alfa irawan, tbl"
     "code": 200
     "message": "success"
     "data": {
-        "businessUnit": "erafone",
-        "product": ["samsung", "apple", "xiaomi"]
+        "businessUnit": "petshop",
+        "product": ["dogs", "cats", "reptiles"]
     }
     "itemsPerPage": 10
     "currentItemCount": 4
@@ -197,7 +197,7 @@ Good:
     "description": null,    // null
     "isDelete": false,      // boolean
     "quantity": 42,         // number
-    "name": "samsung",      // string
+    "name": "cats",         // string
     "moreData": {},         // object
     "things": []            // array
     "moreThingsData": [{}]  // object aarray
@@ -326,7 +326,7 @@ Represents the desired organization of the service API in a request and response
 
 Example:
 ```
-{ "organization": "azec" }
+{ "organization": "alfa irawan, tbk" }
 ```
 
 ### code
